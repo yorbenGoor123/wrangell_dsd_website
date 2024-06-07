@@ -72,7 +72,7 @@ const Menu = () => {
                     styles.hoverElement_bottom
                   )}
                 ></div>
-                <Link href="/work">Work</Link>
+                <Link href="/projects">Projects</Link>
               </li>
             </ul>
           </div>
