@@ -1,0 +1,9 @@
+.background_element {
+  position: absolute;
+  width: 50rem;
+  height: 10rem;
+  border-radius: 10rem;
+  background: var(--background-element-color);
+  z-index: -1;
+  overflow: hidden;
+}

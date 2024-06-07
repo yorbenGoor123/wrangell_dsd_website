@@ -1,0 +1,12 @@
+.header {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_media_items {
+    display: flex;
+    gap: 1.5rem;
+}

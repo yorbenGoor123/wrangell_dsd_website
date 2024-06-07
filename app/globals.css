@@ -6,6 +6,15 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: #212334;
+  --secondary-color: #f1e9a8;
+  --tertiary-color: #A6A9C3;
+  --highlight-color: #FF5733;
+  --highlight-secondary-color: #6A005E;
+  --font-heading: 'Oswald';
+  --font-heading-color: #FEC000;
+  --font-heading-size: 2.5rem;
+  --background-element-color: #38435D;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +26,31 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--primary-color);
+}
+
+/* Apply the animation to the class */
+.logo_animation {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999999;
+  background-color: var(--primary-color);
+  top: 0;
+  animation: fadeOut 1s ease-in-out 4s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 @layer utilities {

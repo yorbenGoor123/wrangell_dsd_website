@@ -1,0 +1,67 @@
+.nav_link_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.nav_link {
+  grid-row: 1;
+  grid-column: 1;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  border-radius: 0.5rem;
+  border: var(--secondary-color) 2px solid;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.nav_link_wrapper {
+  position: relative; /* Added to ensure .nav_link_background positions itself relative to this element */
+  display: inline-block; /* Added to fit the content */
+}
+
+.nav_link_background {
+  background-color: var(--tertiary-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+
+.nav_link_wrapper:hover .nav_link_background {
+  top: -0.4rem;
+  left: -0.4rem;
+  color: var(--highlight-color);
+}
+
+.nav_link {
+  position: relative; /* Added to ensure proper stacking context */
+  z-index: 1;
+}
+
+.hover_navigation_line {
+  height: 0rem;
+  width: .2rem;
+  border-radius: 1rem;
+  background-color: var(--highlight-color);
+  position: absolute;
+  top: .6rem;
+  right: -.5rem;
+  transition: all 0.5s ease;
+}
+
+.nav_link_wrapper:hover .hover_navigation_line {
+  height: 2rem;
+}
