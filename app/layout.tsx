@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./containers/header/Header";
-import Animation from "./components/animation/Animation";
-import animationDataLogo from "./components/animation/logo_wrangell.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,9 +24,6 @@ export default function RootLayout({
         ></link>
       </head>
       <body className={inter.className}>
-        <div className="logo_animation">
-          <Animation animationData={animationDataLogo} />
-        </div>
         <main className="min-h-screen">
           <Header />
           {children}

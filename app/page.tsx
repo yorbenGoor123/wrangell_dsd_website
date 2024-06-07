@@ -1,10 +1,14 @@
-import Header from "./containers/header/Header";
 import Landing from "./containers/Landing/Landing";
+import Animation from "./components/animation/Animation";
+import animationDataLogo from "./components/animation/logo_wrangell.json";
 
 export default function Home() {
   return (
     <>
-        <Landing />
+      <div className="logo_animation">
+        <Animation animationData={animationDataLogo} />
+      </div>
+      <Landing />
     </>
   );
 }

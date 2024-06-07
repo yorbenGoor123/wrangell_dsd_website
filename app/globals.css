@@ -32,6 +32,7 @@ body {
 /* Apply the animation to the class */
 .logo_animation {
   position: absolute;
+  display: block;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -49,7 +50,7 @@ body {
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -99999999999;
   }
 }
 
