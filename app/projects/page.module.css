@@ -18,3 +18,7 @@
     grid-column: 1;
     grid-row: 1;
 }
+
+.cursor {
+    cursor: url('/assets/branding/hover_image.svg'), auto;
+}

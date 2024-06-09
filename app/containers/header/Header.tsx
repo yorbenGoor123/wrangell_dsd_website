@@ -1,4 +1,3 @@
-import NavItem from "@/app/components/navitem/NavItem";
 import styles from "./Header.module.css";
 
 import Image from "next/image"; // Import the Image component from next/image
