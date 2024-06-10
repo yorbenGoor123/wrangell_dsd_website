@@ -22,8 +22,8 @@ const BackgroundIllustration = (props: Props) => {
   return (
       <div
         className={classNames(styles.background_animation, {
-          [styles.fade_in]: speed > 4,
-          [styles.fade_out]: speed <= 4,
+          [styles.fade_in]: speed > 2,
+          [styles.fade_out]: speed <= 2,
         })}
       >
         {tiles}

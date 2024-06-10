@@ -16,7 +16,7 @@ const AnimatedIllustration = (props: Props) => {
     const handleMouseMove = (e: any) => {
       const width = window.innerWidth;
       const mouseX = e.clientX;
-      const newSpeed = (mouseX / width) * 5; // Adjust the multiplier to control max speed
+      const newSpeed = (mouseX / width) * 3; // Adjust the multiplier to control max speed
       setSpeed(newSpeed);
     };
 
