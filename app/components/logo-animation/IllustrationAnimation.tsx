@@ -54,8 +54,8 @@ const AnimatedIllustration = (props: Props) => {
         <Animation
           speed={speed}
           loop={true}
-          width={700}
-          height={700}
+          width={650}
+          height={650}
           animationData={animationData}
         />
       </div>
