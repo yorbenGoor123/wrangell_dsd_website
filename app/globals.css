@@ -36,6 +36,10 @@ body {
   position: relative;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 @media (min-width: 1200px) {
   .content_container {
     flex-direction: row;

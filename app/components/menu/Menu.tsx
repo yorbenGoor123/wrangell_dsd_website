@@ -1,11 +1,26 @@
 "use client";
 import classNames from "classnames";
 import styles from "./Menu.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Effect to handle adding/removing the no-scroll class on the body
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Clean up by removing the class when the component unmounts or menuOpen changes
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [menuOpen]);
+
   return (
     <>
       <div onClick={() => setMenuOpen(true)} className={styles.menu}>
