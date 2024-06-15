@@ -25,6 +25,7 @@
 
 .experience_list_item_content_job {
   font-weight: 600;
+  line-height: 1.8rem
 }
 
 .experience_list_item_content_job::after {

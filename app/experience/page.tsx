@@ -6,6 +6,7 @@ import Animation from "@/app/components/animation/Animation";
 export interface Experience {
   timeFrame: string;
   job: string;
+  href: string;
   jobDescription: string;
   technologies: string[];
 }
@@ -13,24 +14,95 @@ export interface Experience {
 const experiences: Experience[] = [
   {
     timeFrame: "2023-Present",
-    job: "DotNet Developer . Noest",
+    job: "Ecalcura . Departement Zorg",
+    href: "https://www.zorg-en-gezondheid.be/ecalcura",
     jobDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of",
-    technologies: ["Html", "Css", "JavaScript"],
+      "In eCalcura, data is entered to calculate allowances for various care sectors. These sectors include residential care centers (with or without short-stay centers), special recognition day care centers, mobile palliative care teams, psychiatric care homes, certain rehabilitation facilities, sheltered living initiatives, and type 3 short stay centers.",
+    technologies: [
+      "C#",
+      "ASP.NET",
+      "Html",
+      "CSS",
+      "JavaScript",
+      "EntityFramework",
+      "Sql",
+      "Azure",
+      "React",
+    ],
+  },
+  {
+    timeFrame: "2023",
+    job: "KORTRIJK XPO (VELOFOLLIES)",
+    jobDescription:
+      "An application where you manage Cycling clubs. You can manage activities, clubs, memberships and analytics.",
+    technologies: [
+      "C#",
+      "ASP.NET",
+      "Html",
+      "CSS",
+      "JavaScript",
+      "EntityFramework",
+      "Sql",
+      "Azure",
+      "React",
+    ],
+    href: "https://www.velofollies.be/nl/download-app/",
+  },
+  {
+    timeFrame: "2023",
+    job: "CALCULATION TOOL (DESCHACHT)",
+    jobDescription:
+      "A calculation tool (Hauraton) for a construction company to calculate the right drainage channel parts according to your chosen parameters.",
+    technologies: [
+      "C#",
+      "ASP.NET",
+      "Html",
+      "CSS",
+      "JavaScript",
+      "Blazor",
+      "EntityFramework",
+    ],
+    href: "https://www.deschacht.eu/engineering/rekentools/",
+  },
+  {
+    timeFrame: "2022-2023",
+    job: "HEAT-ERP DESIGN SYSTEM IN BLAZOR (ZEROFRICTION)",
+    jobDescription:
+      "A collaborative project in India. Where my task was to enforce good quality code and best practices.",
+    technologies: ["C#", "ASP.NET", "Html", "CSS", "Blazor"],
+    href: "https://www.zerofriction.co/",
   },
   {
     timeFrame: "2021-2023",
-    job: "Frontend Developer . Noest",
+    job: "HEAT-ERP (ZEROFRICTION)",
     jobDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of",
-    technologies: ["Html", "Css", "JavaScript"],
+      "Extend features and refactor the global state management to work with observables, actions and computed values using Mobx.",
+    technologies: ["Mobx", "React", "Typescript"],
+    href: "https://www.zerofriction.co/",
   },
   {
-    timeFrame: "2019-2021",
-    job: "Intern . Noest",
+    timeFrame: "2022",
+    job: "PORTAL HEAT-ERP (ZEROFRICTION)",
     jobDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of",
-    technologies: ["Html", "Css", "JavaScript"],
+      "Customer application where you can manage your utility contracts, invoices and consumption.",
+    technologies: ["Html", "CSS", "JavaScript", "Blazor"],
+    href: "https://www.zerofriction.co/",
+  },
+  {
+    timeFrame: "2021",
+    job: "ONBOARDR (ZEROFRICTION INTERNSHIP)",
+    jobDescription:
+      "A tool where customers migrate their data to the heat-erp application.",
+    technologies: [
+      "C#",
+      "ASP.NET",
+      "Html",
+      "CSS",
+      "JavaScript",
+      "Blazor",
+      "EntityFramework",
+    ],
+    href: "https://www.zerofriction.co/",
   },
 ];
 
@@ -43,7 +115,8 @@ const Experience = () => {
             Full stack developer
           </span>
           <br />
-          Hi I&apos;m Yorben<br />
+          Hi I&apos;m Yorben
+          <br />
           <span className={styles.experience_title_role_description}>
             I make digital solutions that suits your problem
           </span>
@@ -62,18 +135,17 @@ const Experience = () => {
         <div className={styles.about_me}>
           <h2 className={styles.about_me_title}>Hi I&apos;m Yorben</h2>
           <p className={styles.about_me_paragraph}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged.
+            Insightful and creative developer with a robust ambition to learn
+            new ideas and concepts across a range of related disciplines. My
+            passion extends to various fields, including machine learning,
+            robotics, artificial intelligence, and game development.
             <br />
             <br />
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
+            With a deep-seated curiosity, I constantly seek out opportunities to
+            expand my knowledge and apply innovative solutions to complex
+            problems. My approach to development is not just about writing code
+            but about understanding the underlying principles and theories that
+            drive technology forward.
           </p>
         </div>
         <ul className={styles.experience_list_items}>
