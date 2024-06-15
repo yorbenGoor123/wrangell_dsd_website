@@ -15,9 +15,6 @@ const Landing = () => {
 
   return (
     <div className={styles.landing_wrapper}>
-      <BackgroundElement top={8} left={-20} />
-      <BackgroundElement reverse top={20} left={60} />
-      <BackgroundElement top={2} left={50} width={20} />
       <div className={styles.landing_text}>
         <h1 className={styles.landing_heading}>
           UI/UX <span className={styles.landing_design}>DESIGN</span>, <br />{" "}
