@@ -108,7 +108,7 @@
 
 .menu_collapsed_items {
   font-family: var(--font-heading);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
@@ -153,34 +153,34 @@
 }
 
 .hoverElement_top {
-  top: 5rem;
+  top: 4rem;
   right: -1rem;
 }
 
 .menu_collapsed_item_top:hover .hoverElement_top {
-  top: 5rem;
+  top: 4rem;
   right: -1rem;
   width: 8rem;
 }
 
 .hoverElement_center {
-  top: 5rem;
+  top: 4rem;
   right: 2rem;
 }
 
 .menu_collapsed_item_center:hover .hoverElement_center {
-  top: 5rem;
+  top: 4rem;
   right: 6rem;
   width: 8rem;
 }
 
 .hoverElement_bottom {
-  top: 5rem;
+  top: 4rem;
   left: -2rem;
 }
 
 .menu_collapsed_item_bottom:hover .hoverElement_bottom {
-  top: 5rem;
+  top: 4rem;
   left: -2rem;
   width: 6rem;
 }
@@ -188,10 +188,14 @@
 .footer {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1rem;
   font-family: var(--font-heading);
   color: var(--highlight-color);
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 @keyframes fade_in {
@@ -206,5 +210,10 @@
 @media (min-width: 1200px) {
   .menu_container {
     width: 90%;
+  }
+
+  .footer {
+    flex-direction: unset;
+    align-items: unset;
   }
 }
