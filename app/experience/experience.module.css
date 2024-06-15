@@ -1,8 +1,10 @@
 .experience {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   letter-spacing: 0.1rem;
   margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .experience_title_role,
@@ -21,7 +23,7 @@
   display: flex;
   margin-top: 1rem;
   font-weight: 300;
-  width: 50%;
+  justify-content: center;
 }
 
 .experience_title_role {
@@ -36,15 +38,6 @@
   color: var(--font-heading-color);
 }
 
-.experience_title_container {
-  width: 50%;
-}
-
-.experience_list {
-  width: 50%;
-  padding-right: 1rem;
-}
-
 .about_me {
   line-height: 1.8rem;
   margin-bottom: 4rem;
@@ -55,6 +48,7 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  display: none;
 }
 
 .about_me_paragraph {
@@ -62,36 +56,68 @@
   font-weight: 400;
 }
 
-.experience_list {
-  height: 70vh;
-  overflow-y: auto;
+.experience_list::-webkit-scrollbar {
+  width: 12px;
 }
 
-.experience_list::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  .experience_list::-webkit-scrollbar-track {
-    background: #1c1c1c; /* Darker background for the track */
-    border-radius: 10px;
-  }
-  
-  .experience_list::-webkit-scrollbar-thumb {
-    background-color: #555; /* Darker thumb color */
-    border-radius: 10px; /* More rounded corners */
-    border: 3px solid #1c1c1c; /* Adds padding around the thumb */
-  }
-  
-  .experience_list::-webkit-scrollbar-thumb:hover {
-    background: #777; /* Slightly lighter on hover */
-  }
+.experience_list::-webkit-scrollbar-track {
+  background: #1c1c1c; /* Darker background for the track */
+  border-radius: 10px;
+}
+
+.experience_list::-webkit-scrollbar-thumb {
+  background-color: #555; /* Darker thumb color */
+  border-radius: 10px; /* More rounded corners */
+  border: 3px solid #1c1c1c; /* Adds padding around the thumb */
+}
+
+.experience_list::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Slightly lighter on hover */
+}
 
 .experience_title_container {
-    height: 40rem;
-    position: relative;
+  position: relative;
+  text-align: center;
 }
 
 .experience_illustration {
-    position: absolute;
-    right: 3rem;
+  position: absolute;
+  right: 3rem;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .experience {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .experience_title_container {
+    width: 50%;
+    text-align: left;
+    height: 40rem;
+  }
+  
+  .experience_list {
+    width: 50%;
+    padding-right: 1rem;
+  }
+
+  .experience_illustration {
+    position: unset;
+    display: block;
+  }
+
+  .experience_title_role_description {
+    width: 20rem;
+  }
+
+  .experience_list {
+    height: 70vh;
+    overflow-y: auto;
+  }
+
+  .about_me_title {
+    display: block;
+  }
 }

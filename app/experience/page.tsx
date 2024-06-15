@@ -43,8 +43,7 @@ const Experience = () => {
             Full stack developer
           </span>
           <br />
-          Hi I&apos;m Yorben
-          <br />
+          Hi I&apos;m Yorben<br />
           <span className={styles.experience_title_role_description}>
             I make digital solutions that suits your problem
           </span>
