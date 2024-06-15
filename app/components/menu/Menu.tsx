@@ -59,7 +59,7 @@ const Menu = () => {
                     styles.hoverElement_top
                   )}
                 ></div>
-                <Link href="/about">Contact</Link>
+                <Link href="mailto:yorben.goor@wrangell-dsd.com">Contact</Link>
               </li>
               <li
                 className={classNames(
@@ -93,9 +93,12 @@ const Menu = () => {
           </div>
 
           <div className={styles.footer}>
-            <a href="#" className={styles.footer_item}>
+            <Link
+              href="mailto:yorben.goor@wrangell-dsd.com"
+              className={styles.footer_item}
+            >
               yorben.goor@wrangell-dsd.com
-            </a>
+            </Link>
             <p className={styles.footer_item}>COPYRIGHT © WRANGELL-DSD</p>
             <p className={styles.footer_item}>VAT BE0794673983</p>
           </div>

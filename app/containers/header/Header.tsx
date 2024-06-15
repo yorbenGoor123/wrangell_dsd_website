@@ -18,6 +18,7 @@ const Header = () => {
         />
       </Link>
       <ul className={styles.social_media_items}>
+        {/*
         <li>
           <NavLink icon href="test">
             <Image
@@ -28,8 +29,12 @@ const Header = () => {
             />
           </NavLink>
         </li>
+                   */}
         <li>
-          <NavLink icon href="test">
+          <NavLink
+            icon
+            href="https://www.linkedin.com/in/yorben-goor-1965a6207/"
+          >
             <Image
               src="/assets/social_media/linkedin.svg"
               width={20}

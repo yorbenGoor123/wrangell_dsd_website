@@ -40,6 +40,20 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.contact {
+  color: var(--font-style-2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: .2rem;
+  font-size: .8rem;
+}
+
 @media (min-width: 1200px) {
   .content_container {
     flex-direction: row;

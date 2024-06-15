@@ -32,7 +32,7 @@ const experiences: Experience[] = [
   },
   {
     timeFrame: "2023",
-    job: "KORTRIJK XPO (VELOFOLLIES)",
+    job: "Vf clubs . Velofollies",
     jobDescription:
       "An application where you manage Cycling clubs. You can manage activities, clubs, memberships and analytics.",
     technologies: [
@@ -50,7 +50,7 @@ const experiences: Experience[] = [
   },
   {
     timeFrame: "2023",
-    job: "CALCULATION TOOL (DESCHACHT)",
+    job: "Calculation tool . Deschacht",
     jobDescription:
       "A calculation tool (Hauraton) for a construction company to calculate the right drainage channel parts according to your chosen parameters.",
     technologies: [
@@ -66,7 +66,7 @@ const experiences: Experience[] = [
   },
   {
     timeFrame: "2022-2023",
-    job: "HEAT-ERP DESIGN SYSTEM IN BLAZOR (ZEROFRICTION)",
+    job: "Heat-erp design system in blazor . Zerofriction",
     jobDescription:
       "A collaborative project in India. Where my task was to enforce good quality code and best practices.",
     technologies: ["C#", "ASP.NET", "Html", "CSS", "Blazor"],
@@ -74,7 +74,7 @@ const experiences: Experience[] = [
   },
   {
     timeFrame: "2021-2023",
-    job: "HEAT-ERP (ZEROFRICTION)",
+    job: "Heat-erp . Zerofriction",
     jobDescription:
       "Extend features and refactor the global state management to work with observables, actions and computed values using Mobx.",
     technologies: ["Mobx", "React", "Typescript"],
@@ -82,26 +82,10 @@ const experiences: Experience[] = [
   },
   {
     timeFrame: "2022",
-    job: "PORTAL HEAT-ERP (ZEROFRICTION)",
+    job: "Portal heat-erp . Zerofriction",
     jobDescription:
       "Customer application where you can manage your utility contracts, invoices and consumption.",
     technologies: ["Html", "CSS", "JavaScript", "Blazor"],
-    href: "https://www.zerofriction.co/",
-  },
-  {
-    timeFrame: "2021",
-    job: "ONBOARDR (ZEROFRICTION INTERNSHIP)",
-    jobDescription:
-      "A tool where customers migrate their data to the heat-erp application.",
-    technologies: [
-      "C#",
-      "ASP.NET",
-      "Html",
-      "CSS",
-      "JavaScript",
-      "Blazor",
-      "EntityFramework",
-    ],
     href: "https://www.zerofriction.co/",
   },
 ];
@@ -115,7 +99,7 @@ const Experience = () => {
             Full stack developer
           </span>
           <br />
-          Hi I&apos;m Yorben
+          Yorben Goor
           <br />
           <span className={styles.experience_title_role_description}>
             I make digital solutions that suits your problem
@@ -135,7 +119,7 @@ const Experience = () => {
         <div className={styles.about_me}>
           <h2 className={styles.about_me_title}>Hi I&apos;m Yorben</h2>
           <p className={styles.about_me_paragraph}>
-            Insightful and creative developer with a robust ambition to learn
+            An insightful and creative developer with a robust ambition to learn
             new ideas and concepts across a range of related disciplines. My
             passion extends to various fields, including machine learning,
             robotics, artificial intelligence, and game development.

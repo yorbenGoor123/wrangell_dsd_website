@@ -15,7 +15,7 @@ const NavLink = (props: Props) => {
 
   return (
     <div className={styles.link_container}>
-      <Link href={href}>
+      <Link href={href} target="_blank">
         <div className={styles.nav_link_wrapper}>
           <div
             className={styles.nav_link_background}

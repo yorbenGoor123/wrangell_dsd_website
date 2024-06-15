@@ -7,6 +7,7 @@ import Animation from "@/app/components/animation/Animation";
 import { useState } from "react";
 import classNames from "classnames";
 import AnimatedIllustration from "@/app/components/logo-animation/IllustrationAnimation";
+import Link from "next/link";
 
 const Landing = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,7 +27,7 @@ const Landing = () => {
           onMouseLeave={() => setIsHovered(false)}
           className={styles.landing_button_container}
         >
-          <NavLink href="test">
+          <NavLink href="mailto:yorben.goor@wrangell-dsd.com">
             <p>Have a talk!</p>
           </NavLink>
         </div>
