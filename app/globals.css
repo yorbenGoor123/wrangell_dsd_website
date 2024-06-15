@@ -57,6 +57,7 @@ body.no-scroll {
 .logo_animation {
   position: absolute;
   display: block;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   display: flex;
