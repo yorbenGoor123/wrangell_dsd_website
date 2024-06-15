@@ -44,7 +44,7 @@ const Menu = () => {
                     styles.hoverElement_top
                   )}
                 ></div>
-                <Link href="/about">About</Link>
+                <Link href="/about">Contact</Link>
               </li>
               <li
                 className={classNames(

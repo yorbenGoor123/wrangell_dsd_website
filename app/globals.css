@@ -8,13 +8,15 @@
   --background-end-rgb: 255, 255, 255;
   --primary-color: #212334;
   --secondary-color: #f1e9a8;
-  --tertiary-color: #A6A9C3;
-  --highlight-color: #FF5733;
-  --highlight-secondary-color: #6A005E;
-  --font-heading: 'Oswald';
-  --font-heading-color: #FEC000;
+  --tertiary-color: #a6a9c3;
+  --highlight-color: #ff5733;
+  --highlight-secondary-color: #6a005e;
+  --font-heading: "Oswald";
+  --font-heading-color: #fec000;
   --font-heading-size: 2.5rem;
-  --background-element-color: #38435D;
+  --background-element-color: #38435d;
+  --font-style-1: #DED89E;
+  --font-style-2: #BFBEB9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +29,25 @@
 
 body {
   background-color: var(--primary-color);
+}
+
+.content_container_wrapper {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .content_container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 78rem;
+    margin: 0 auto;
+    align-items: flex-start;
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+    line-height: 4rem;
+  }
 }
 
 /* Apply the animation to the class */

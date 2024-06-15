@@ -1,0 +1,61 @@
+.experience_list_item {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--font-style-1);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.experience_list_item:hover {
+  border: 1px solid var(--font-style-1);
+  margin-left: 1rem;
+}
+
+.experience_list_item_time_frame {
+  width: 30%;
+  text-wrap: nowrap;
+  font-weight: 300;
+}
+
+.experience_list_item_content {
+  width: 70%;
+}
+
+.experience_list_item_content_job {
+  font-weight: 600;
+}
+
+.experience_list_item_content_job::after {
+  content: "\2197";
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.experience_list_item_content_job_description {
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: var(--font-style-2);
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.technology {
+  background-color: var(--font-style-1);
+  color: var(--primary-color);
+  padding: 0.2rem 1rem;
+  height: 100%;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1rem;
+}

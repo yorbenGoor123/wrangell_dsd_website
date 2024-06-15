@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import styles from "./NavLink.module.css";
-import classNames from "classnames";
 import { useState } from "react";
 
 interface Props {

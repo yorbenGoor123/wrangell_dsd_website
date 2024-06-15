@@ -1,0 +1,97 @@
+.experience {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+}
+
+.experience_title_role,
+.experience_title_role_description {
+  color: var(--font-style-1);
+  font-size: 1rem;
+}
+
+.experience_title_role {
+  font-weight: 500;
+}
+
+.experience_title_role_description {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  display: flex;
+  margin-top: 1rem;
+  font-weight: 300;
+  width: 50%;
+}
+
+.experience_title_role {
+  font-size: 1.4rem;
+}
+
+.experience_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.8rem;
+  color: var(--font-heading-color);
+}
+
+.experience_title_container {
+  width: 50%;
+}
+
+.experience_list {
+  width: 50%;
+  padding-right: 1rem;
+}
+
+.about_me {
+  line-height: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.about_me_title {
+  color: var(--font-style-1);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.about_me_paragraph {
+  color: var(--font-style-2);
+  font-weight: 400;
+}
+
+.experience_list {
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.experience_list::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .experience_list::-webkit-scrollbar-track {
+    background: #1c1c1c; /* Darker background for the track */
+    border-radius: 10px;
+  }
+  
+  .experience_list::-webkit-scrollbar-thumb {
+    background-color: #555; /* Darker thumb color */
+    border-radius: 10px; /* More rounded corners */
+    border: 3px solid #1c1c1c; /* Adds padding around the thumb */
+  }
+  
+  .experience_list::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Slightly lighter on hover */
+  }
+
+.experience_title_container {
+    height: 40rem;
+    position: relative;
+}
+
+.experience_illustration {
+    position: absolute;
+    right: 3rem;
+}

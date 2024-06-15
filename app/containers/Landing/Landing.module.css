@@ -25,12 +25,6 @@
   animation: colorChangeVar3 3s infinite
 }
 
-.main_landing {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-}
-
 .landing_heading {
     margin-bottom: 5rem;
 }
