@@ -1,6 +1,5 @@
 "use client";
 import styles from "./Landing.module.css";
-import BackgroundElement from "@/app/components/background-element/BackgroundElement";
 import NavLink from "@/app/components//nav-link/NavLink";
 import BackgroundIllustration from "@/app/components/background-illustration/BackgroundIllustration";
 import IllustrationFadeIn from "./illustration_fade_in.json";
