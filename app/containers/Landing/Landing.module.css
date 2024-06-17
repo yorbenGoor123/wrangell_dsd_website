@@ -22,7 +22,12 @@
 }
 
 .rubber_duck {
-  animation: colorChangeVar3 3s infinite
+  animation: colorChangeVar3 3s infinite;
+  transition: all .2s ease-in-out;
+}
+
+.rubber_duck:hover {
+  text-decoration: underline;
 }
 
 .landing_heading {

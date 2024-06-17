@@ -20,7 +20,7 @@ const Landing = () => {
           UI/UX <span className={styles.landing_design}>DESIGN</span>, <br />{" "}
           <span className={styles.landing_development}>DEVELOPMENT</span>,{" "}
           <br />
-          <span className={styles.rubber_duck}>RUBBER DUCK</span>ING
+          <span className={styles.rubber_duck}><Link target="_blank" href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">RUBBER DUCK</Link></span>ING
         </h1>
         <div
           onMouseEnter={() => setIsHovered(true)}
