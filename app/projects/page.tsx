@@ -23,7 +23,7 @@ const videos: Video[] = [
   },
   {
     src: "/assets/videos/project_4.mp4",
-    href: "https://wrangell-dsd.com/wordpress/",
+    href: "https://www.b-spokelux.com/",
   },
 ];
 
