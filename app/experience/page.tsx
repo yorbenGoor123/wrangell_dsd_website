@@ -1,7 +1,6 @@
 import ExperienceListItem from "../containers/experience-list-item/ExperienceListItem";
 import styles from "./experience.module.css";
-import IllustrationFadeIn from "../containers/Landing/illustration_fade_in.json";
-import Animation from "@/app/components/animation/Animation";
+import Image from "next/image";
 
 export interface Experience {
   timeFrame: string;
@@ -106,13 +105,12 @@ const Experience = () => {
           </span>
         </h1>
         <div className={styles.experience_illustration}>
-          <Animation
-            speed={1}
-            loop={true}
-            width={650}
-            height={650}
-            animationData={IllustrationFadeIn}
-          />
+        <Image
+          src="/assets/branding/yorben.jpg"
+          width={500}
+          height={500}
+          alt="logo"
+        />
         </div>
       </div>
       <div className={styles.experience_list}>
