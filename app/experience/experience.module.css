@@ -55,6 +55,7 @@
 .about_me_paragraph {
   color: var(--font-style-2);
   font-weight: 400;
+  margin-top: 3rem;
 }
 
 .experience_list::-webkit-scrollbar {
@@ -82,15 +83,22 @@
 }
 
 .experience_illustration {
-  position: absolute;
-  right: 3rem;
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+
+.experience_list {
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
   .experience {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .about_me_paragraph {
+    margin: 0;
   }
 
   .experience_title_container {
@@ -102,6 +110,9 @@
   .experience_list {
     width: 50%;
     padding-right: 1rem;
+    height: 70vh;
+    overflow-y: auto;
+    text-align: left;
   }
 
   .experience_illustration {
@@ -111,11 +122,6 @@
 
   .experience_title_role_description {
     width: 20rem;
-  }
-
-  .experience_list {
-    height: 70vh;
-    overflow-y: auto;
   }
 
   .about_me_title {
