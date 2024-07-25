@@ -24,6 +24,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css?family=Oswald"
           rel="stylesheet"
         ></link>
+        <meta name="google-site-verification" content="xTYzJ5jJ8nYUyS1bKOtXYkmr2jaidF8gdHTW2nraTFE" />
       </head>
       <body className={inter.className}>
         <div className="logo_animation">
